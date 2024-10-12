@@ -2,35 +2,35 @@
 ## Basic Configuration
 ## -----------------------------------------------
 
+baseURL = "https://djxhama.xyz"
+languageCode = "en-us"
 theme = "hugo-story"
-
-## -----------------------------------------------
-## Publish
-## -----------------------------------------------
-
-relativeURLs = "true"
-#canonifyURLs = "true"
+title = "DJ Xhama"
+copyright = "{year}"
 
 # Local
-baseURL = "/"
-publishDir = "public"
-
-# Remote
-#baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
-#publishDir = "//centos/sites/hugodev/hugostory/"
-
-
-## -----------------------------------------------
-## Hugo Built-in Features
-## -----------------------------------------------
+# baseURL = "/"
+# publishDir = "public"
 
 disableKinds = ["taxonomy", "section"]
-# googleAnalytics = "your-google-analytics-id"
+relativeURLs = "true"
 
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------
 
 [Params]
+  description = "Spreading positivity through sound."
+  logo = "images/spotlight-1.jpeg"
+  favicon = true
 
 [Params.social]
+  soundcloud = "https://soundcloud.com/xhama-vyas"
+  spotify = "https://open.spotify.com/user/xhamallama"
+  mixcloud = "https://www.mixcloud.com/xhama/"
+  email = "djxhama.bookings@gmail.com"
+  instagram = "https://instagram.com/xhamallama"
+
+[Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
