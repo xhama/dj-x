@@ -1,0 +1,28 @@
+# title: "Gallery"
+style: "style2 big lightbox onscroll-fade-in"
+# TODO uncomment to add 
+# content: |
+#   This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).
+pictures:
+  - 
+    # title: "Party Bus"
+    # content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/party-1-full.jpg"
+    thumb: "images/gallery/thumbs/party-1-thumb.jpg"
+    button: "Party Bus DJ"
+
+  - image: "images/gallery/fulls/mission-full.jpg"
+    thumb: "images/gallery/thumbs/mission-thumb.jpg"
+    button: "Club DJ"
+
+  - image: "images/gallery/fulls/cali-full.jpg"
+    thumb: "images/gallery/thumbs/cali-thumb.jpg"
+    button: "Cali DJ"
+  
+  - image: "images/gallery/fulls/kennedy-full.jpg"
+    thumb: "images/gallery/thumbs/kennedy-thumb.jpg"
+    button: "Festival DJ"
+
+  - image: "images/gallery/fulls/spacy-full.jpg"
+    thumb: "images/gallery/thumbs/spacy-thumb.jpg"
+    button: "Gallery DJ"

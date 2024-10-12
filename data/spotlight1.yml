@@ -1,0 +1,13 @@
+####################### Spotlight #########################
+style: "style1 invert orient-right content-align-left image-position-center onscroll-image-fade-in"
+id: "first"
+title : "It's pronounced 'shama'"
+content: |
+ Born and raised in the DMV, my passion for music led me to start DJing at local venues a few years ago.
+  Since then, I’ve had the privilege of performing at some of the city's top bars and clubs, the Kennedy Center, as well as numerous private events and weddings.
+  Dedicated to spreading love and positivity through sound and making each
+  event as unforgettable and fun as possible.
+button: 
+  label: "Call me Maybe"
+  link: "#contactMe"
+image: "images/self-2.jpeg"
