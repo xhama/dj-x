@@ -2,7 +2,7 @@
 ## Basic Configuration
 ## -----------------------------------------------
 
-baseURL = "https://djxhama.xyz"
+baseURL = "https://djxhama.xyz/"
 languageCode = "en-us"
 theme = "hugo-story"
 title = "DJ Xhama"
