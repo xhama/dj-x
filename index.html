@@ -68,7 +68,7 @@
       <p class="splash__logo wordmark wordmark--dense">DJ XHAMA</p>
       <p class="creds">NIGHTLIFE · WEDDINGS · FESTIVALS · PRIVATE EVENTS</p>
       <div class="splash__actions">
-        <a class="btn btn--ghost" href="#listen" data-enter="listen">Listen</a>
+        <a class="btn btn--ghost" href="#listen" data-enter="listen">Listen<span class="btn__icon" aria-hidden="true"></span></a>
         <a class="btn btn--neon" href="#top" data-enter="top">Enter</a>
       </div>
     </div>
@@ -108,7 +108,7 @@
         <p class="creds reveal">NIGHTLIFE · WEDDINGS · FESTIVALS · PRIVATE EVENTS</p>
         <div class="hero__cta reveal">
           <a class="btn btn--neon" href="#contact">Book now</a>
-          <a class="btn btn--ghost" href="#listen">Listen</a>
+          <a class="btn btn--ghost" href="#listen">Listen<span class="btn__icon" aria-hidden="true"></span></a>
         </div>
       </div>
       <div class="hero__marquee" aria-hidden="true">
@@ -197,7 +197,7 @@
       <div class="listen__grid">
         <div class="embed reveal" data-platform="SoundCloud">
           <div class="embed__slot">
-            <iframe title="Summer 26 Dance Mix on SoundCloud" loading="lazy" allow="autoplay"
+            <iframe id="sc-player" title="Summer 26 Dance Mix on SoundCloud" allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fdj-xhama%2Fsummer-26-dance-mix&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true"></iframe>
           </div>
         </div>
@@ -314,6 +314,7 @@
 
   </div>
 
+  <script src="https://w.soundcloud.com/player/api.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

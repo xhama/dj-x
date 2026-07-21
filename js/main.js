@@ -11,7 +11,8 @@
       const target = document.querySelector(btn.getAttribute('href'));
       document.body.classList.remove('is-splashed');
       splash.classList.add('is-gone');
-      if (target) {
+      // Listen just starts the music and drops you on the site — no jump.
+      if (target && btn.dataset.enter !== 'listen') {
         // let the fade start before scrolling so the site is visible underneath
         setTimeout(() => target.scrollIntoView({ behavior: 'instant', block: 'start' }), 50);
       }
@@ -66,6 +67,28 @@
       );
       vio.observe(video);
     }
+  }
+
+  // Listen buttons toggle the SoundCloud set (nav link stays plain navigation)
+  const scFrame = document.getElementById('sc-player');
+  if (scFrame && window.SC) {
+    const widget = SC.Widget(scFrame);
+    let playing = false;
+    const listenBtns = document.querySelectorAll('a.btn[href="#listen"]');
+    const syncIcons = () => {
+      listenBtns.forEach((btn) => {
+        const icon = btn.querySelector('.btn__icon');
+        if (icon) icon.classList.toggle('is-pause', playing);
+      });
+    };
+    widget.bind(SC.Widget.Events.PLAY, () => { playing = true; syncIcons(); });
+    widget.bind(SC.Widget.Events.PAUSE, () => { playing = false; syncIcons(); });
+    listenBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        playing ? widget.pause() : widget.play();
+      });
+    });
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();

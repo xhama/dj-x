@@ -250,6 +250,25 @@ a { color: inherit; text-decoration: none; }
 
 .btn--small { padding: .7rem 1.5rem; font-size: .65rem; }
 
+/* play/pause icon on the Listen buttons — drawn rather than typed, so the two
+   states match in weight and follow the button colour on hover */
+.btn__icon {
+  display: inline-block;
+  width: .62em;
+  height: .68em;
+  margin-left: .55em;
+  letter-spacing: 0;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.btn__icon.is-pause {
+  clip-path: none;
+  background:
+    linear-gradient(currentColor 0 0) left / 34% 100% no-repeat,
+    linear-gradient(currentColor 0 0) right / 34% 100% no-repeat;
+}
+
 /* ---------- placeholders (replaced by real assets) ---------- */
 
 .ph {
